@@ -1,0 +1,35 @@
+# Cloudflare / Wrangler
+.wrangler/
+.dev.vars
+wrangler.local.toml
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Environment & secrets — NEVER commit these
+.env
+.env.*
+*.env
+secrets.json
+credentials.json
+*.pem
+*.key
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build output
+dist/
+build/
+.cache/

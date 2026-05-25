@@ -1,0 +1,17 @@
+name = "garbha-sanskar"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# Route — update this to match your Cloudflare zone if using a custom domain
+# workers_dev = true serves at <name>.jainamshah.workers.dev automatically
+
+[site]
+bucket = "."
+include = ["garbha-sanskar.html", "README.md"]
+
+# To deploy:
+#   1. wrangler login          (authenticates locally — token is NEVER stored here)
+#   2. wrangler deploy
+#
+# Your Cloudflare Account ID is read from ~/.wrangler/config.toml after login.
+# Do NOT add account_id or api_token to this file.

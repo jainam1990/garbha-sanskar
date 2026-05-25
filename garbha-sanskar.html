@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Garbha Sanskar — Sacred Stories for Mother & Child</title>
+<meta name="description" content="Devotional stories of Lord Krishna, Mahavir, Hanuman, Shiv and Gautam Swami — in Gujarati and Hindi — for Garbha Sanskar prenatal listening.">
+<style>
+/* ─────────────── RESET & BASE ─────────────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#1c1917;--ink2:#44403c;--ink3:#78716c;
+  --cream:#faf9f7;--white:#fff;--border:#e7e5e4;
+  --purple:#2C1654;--purple-d:#1a0e3d;--purple-l:#7c3aed;
+  --gold:#d97706;--gold-l:#fbbf24;--gold-bg:#fffbeb;
+  --green:#065f46;--green-l:#10b981;--green-bg:#ecfdf5;
+  --red-soft:#7f1d1d;
+  --r:8px;--r-lg:14px;
+  --font-sans:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+  --font-serif:Georgia,'Times New Roman',serif;
+  --shadow:0 1px 3px rgba(0,0,0,.08),0 4px 16px rgba(0,0,0,.06);
+  --shadow-lg:0 8px 40px rgba(0,0,0,.12);
+}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:var(--font-sans);background:var(--cream);color:var(--ink);line-height:1.6;min-height:100vh}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+img{max-width:100%;display:block}
+
+/* ─────────────── HEADER ─────────────── */
+.site-header{
+  position:sticky;top:0;z-index:200;
+  background:var(--purple-d);
+  border-bottom:1px solid rgba(255,255,255,.08);
+  backdrop-filter:blur(8px);
+}
+.header-inner{
+  max-width:1100px;margin:0 auto;
+  padding:0 1.5rem;height:64px;
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+}
+.brand{display:flex;align-items:center;gap:10px;cursor:pointer}
+.brand-mark{
+  width:40px;height:40px;border-radius:50%;
+  background:var(--gold);
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;font-weight:800;color:var(--purple-d);flex-shrink:0;
+}
+.brand-text{line-height:1.2}
+.brand-name{font-size:15px;font-weight:700;color:#fff}
+.brand-tag{font-size:11px;color:#c4b5fd}
+.site-nav{display:flex;gap:6px;align-items:center}
+.nav-btn{
+  padding:6px 14px;border-radius:20px;border:none;
+  font-size:13px;font-weight:500;background:transparent;
+  color:#c4b5fd;transition:all .15s;
+}
+.nav-btn:hover,.nav-btn.active{background:rgba(255,255,255,.1);color:#fff}
+.nav-btn-start{
+  background:var(--gold);color:var(--purple-d);
+  font-weight:700;padding:7px 16px;
+}
+.nav-btn-start:hover{background:var(--gold-l);color:var(--purple-d)}
+
+/* ─────────────── PAGES ─────────────── */
+.page{display:none}
+.page.active{display:block}
+
+/* ─────────────── HERO ─────────────── */
+.hero{
+  background:linear-gradient(160deg,var(--purple-d) 0%,#3b0764 60%,#4c1d95 100%);
+  padding:5rem 1.5rem 4rem;text-align:center;
+  position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'ॐ';position:absolute;right:-2rem;top:-3rem;
+  font-size:280px;color:rgba(255,255,255,.03);
+  font-weight:800;pointer-events:none;line-height:1;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:6px;
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);
+  border-radius:30px;padding:5px 14px;
+  font-size:12px;font-weight:600;letter-spacing:.1em;
+  color:#c4b5fd;text-transform:uppercase;margin-bottom:1.5rem;
+}
+.hero h1{
+  font-size:clamp(1.8rem,5vw,3rem);font-weight:800;color:#fff;
+  line-height:1.2;margin-bottom:.8rem;letter-spacing:-.02em;
+}
+.hero-sub{
+  font-size:16px;color:#ddd6fe;max-width:560px;margin:0 auto 2.5rem;
+  line-height:1.75;font-weight:400;
+}
+.hero-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--gold);color:var(--purple-d);
+  padding:13px 28px;border-radius:30px;
+  font-size:15px;font-weight:700;border:none;
+  transition:transform .15s,box-shadow .15s;
+  box-shadow:0 4px 16px rgba(217,119,6,.4);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(217,119,6,.5)}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:6px;
+  background:transparent;color:#e9d5ff;
+  padding:13px 24px;border-radius:30px;
+  font-size:15px;font-weight:500;
+  border:1.5px solid rgba(233,213,255,.3);
+  transition:border-color .2s,color .2s;
+}
+.btn-ghost:hover{border-color:rgba(233,213,255,.6);color:#fff}
+.hero-stats{
+  display:flex;gap:24px;justify-content:center;
+  margin-top:2.5rem;flex-wrap:wrap;
+}
+.hero-stat{text-align:center}
+.hero-stat-num{font-size:22px;font-weight:800;color:var(--gold-l)}
+.hero-stat-lbl{font-size:11px;color:#a78bfa;letter-spacing:.06em;text-transform:uppercase;margin-top:2px}
+
+/* ─────────────── LIBRARY ─────────────── */
+.library-section{max-width:1100px;margin:0 auto;padding:3rem 1.5rem 4rem}
+.section-head{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:1.75rem;flex-wrap:wrap;gap:12px;
+}
+.section-head h2{font-size:22px;font-weight:700;letter-spacing:-.02em}
+.filter-row{display:flex;gap:6px}
+.filter-chip{
+  padding:7px 16px;border-radius:20px;border:1.5px solid var(--border);
+  background:var(--white);font-size:13px;font-weight:600;
+  color:var(--ink3);transition:all .15s;
+}
+.filter-chip:hover{border-color:var(--ink3)}
+.fc-all.on{background:var(--purple);color:#fff;border-color:var(--purple)}
+.fc-h.on{background:var(--gold);color:var(--purple-d);border-color:var(--gold)}
+.fc-j.on{background:var(--green);color:#fff;border-color:var(--green)}
+
+/* ─────────────── STORY CARDS ─────────────── */
+.cards-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+  gap:20px;
+}
+.story-card{
+  background:var(--white);border-radius:var(--r-lg);
+  border:1px solid var(--border);overflow:hidden;
+  cursor:pointer;transition:transform .2s,box-shadow .2s;
+  display:flex;flex-direction:column;
+}
+.story-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.card-cover{
+  height:130px;display:flex;align-items:center;justify-content:center;
+  font-size:52px;position:relative;flex-shrink:0;
+}
+.card-faith-tag{
+  position:absolute;top:10px;left:10px;
+  font-size:11px;font-weight:700;padding:3px 10px;border-radius:12px;
+}
+.tag-hindu{background:var(--gold-bg);color:var(--gold)}
+.tag-jain{background:var(--green-bg);color:var(--green)}
+.card-body{padding:16px;flex:1;display:flex;flex-direction:column}
+.card-deity{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--ink3);margin-bottom:4px}
+.card-title{font-size:16px;font-weight:700;line-height:1.3;color:var(--ink);margin-bottom:6px}
+.card-sub{font-size:13px;color:var(--ink3);font-style:italic;margin-bottom:8px}
+.card-excerpt{font-size:13px;line-height:1.6;color:var(--ink2);flex:1;margin-bottom:12px}
+.card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:auto}
+.card-meta-row{display:flex;align-items:center;gap:10px}
+.card-dur{font-size:12px;color:var(--ink3);display:flex;align-items:center;gap:4px}
+.card-play-btn{
+  display:flex;align-items:center;gap:5px;
+  padding:7px 14px;border-radius:20px;border:none;
+  font-size:12px;font-weight:700;transition:all .15s;
+}
+.play-h{background:var(--gold-bg);color:var(--gold)}
+.play-h:hover{background:var(--gold);color:#fff}
+.play-j{background:var(--green-bg);color:var(--green)}
+.play-j:hover{background:var(--green);color:#fff}
+
+/* ─────────────── ARTICLE / PLAYER PAGE ─────────────── */
+.article-page{max-width:1100px;margin:0 auto;padding:2rem 1.5rem 4rem}
+.breadcrumb{display:flex;align-items:center;gap:8px;margin-bottom:1.5rem}
+.breadcrumb-btn{
+  display:inline-flex;align-items:center;gap:5px;
+  font-size:13px;color:var(--ink3);background:none;border:none;padding:0;
+  transition:color .15s;
+}
+.breadcrumb-btn:hover{color:var(--ink)}
+.breadcrumb-sep{color:var(--ink3);font-size:12px}
+.breadcrumb-cur{font-size:13px;color:var(--ink2);font-weight:500}
+
+.article-layout{display:grid;grid-template-columns:1fr 320px;gap:28px;align-items:start}
+@media(max-width:800px){.article-layout{grid-template-columns:1fr}}
+
+/* Article main */
+.article-hero{
+  border-radius:var(--r-lg);overflow:hidden;
+  border:1px solid var(--border);margin-bottom:24px;
+  box-shadow:var(--shadow);
+}
+.article-banner{padding:2rem;display:flex;gap:1.25rem;align-items:flex-start}
+.article-deity-icon{
+  width:80px;height:90px;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:44px;flex-shrink:0;
+}
+.article-meta{flex:1}
+.article-category{
+  display:inline-flex;align-items:center;gap:5px;
+  font-size:11px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.1em;margin-bottom:.6rem;
+  padding:3px 10px;border-radius:10px;
+}
+.cat-hindu{background:rgba(251,191,36,.2);color:var(--gold-l)}
+.cat-jain{background:rgba(16,185,129,.2);color:#6ee7b7}
+.article-title{font-size:clamp(1.4rem,3vw,2rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:.5rem}
+.article-subtitle{font-size:14px;color:rgba(255,255,255,.7);font-style:italic;margin-bottom:.75rem}
+.article-desc{font-size:14px;line-height:1.7;color:rgba(255,255,255,.8)}
+.article-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:.75rem}
+.article-tag{
+  font-size:11px;font-weight:600;padding:3px 10px;border-radius:10px;
+  background:rgba(255,255,255,.12);color:rgba(255,255,255,.85);
+}
+.article-reading-time{
+  font-size:11px;color:rgba(255,255,255,.5);margin-top:.5rem;
+  display:flex;align-items:center;gap:4px;
+}
+
+/* Video section */
+.video-section{border-top:1px solid rgba(255,255,255,.1)}
+.video-label{
+  padding:.6rem 1rem;font-size:11px;font-weight:700;
+  text-transform:uppercase;letter-spacing:.08em;
+  background:rgba(0,0,0,.2);color:rgba(255,255,255,.5);
+  display:flex;align-items:center;gap:6px;
+}
+.video-container{background:#000;position:relative;aspect-ratio:16/9}
+.video-container iframe{position:absolute;inset:0;width:100%;height:100%;border:none}
+/* Fallback shown when video can't embed */
+.video-fallback{
+  position:absolute;inset:0;
+  display:none;align-items:center;justify-content:center;
+  flex-direction:column;gap:12px;
+  background:linear-gradient(135deg,#1a0e3d,#3b0764);
+  text-align:center;padding:2rem;
+}
+.video-fallback.show{display:flex}
+.fallback-icon{font-size:40px;margin-bottom:4px}
+.fallback-title{font-size:15px;font-weight:700;color:#fff}
+.fallback-sub{font-size:13px;color:#c4b5fd;margin-bottom:8px}
+.fallback-link{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--gold);color:var(--purple-d);
+  padding:10px 20px;border-radius:20px;
+  font-size:13px;font-weight:700;text-decoration:none;
+  transition:opacity .15s;
+}
+.fallback-link:hover{opacity:.88}
+
+/* Story text article */
+.story-article{
+  background:var(--white);border:1px solid var(--border);
+  border-radius:var(--r-lg);padding:2rem 2.25rem;
+  box-shadow:var(--shadow);
+}
+.story-article-header{
+  display:flex;align-items:center;gap:8px;
+  font-size:11px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.1em;color:var(--ink3);
+  margin-bottom:1.5rem;padding-bottom:1rem;
+  border-bottom:1px solid var(--border);
+}
+.story-article h3{
+  font-family:var(--font-serif);
+  font-size:1.3rem;font-weight:700;color:var(--ink);
+  margin:1.5rem 0 .6rem;line-height:1.3;
+}
+.story-article p{
+  font-family:var(--font-serif);
+  font-size:16px;line-height:1.9;color:var(--ink2);
+  margin-bottom:1.1rem;
+}
+.story-article p:last-child{margin-bottom:0}
+.story-verse{
+  margin:1.5rem 0;padding:1rem 1.5rem;
+  border-left:3px solid;border-radius:0 var(--r) var(--r) 0;
+  font-family:var(--font-serif);font-style:italic;
+  font-size:15px;line-height:1.8;
+}
+.verse-h{border-color:var(--gold);background:var(--gold-bg);color:#92400e}
+.verse-j{border-color:var(--green-l);background:var(--green-bg);color:var(--green)}
+.story-moral{
+  margin:1.5rem 0 0;padding:1rem 1.25rem;
+  background:var(--cream);border-radius:var(--r);
+  border:1px solid var(--border);
+  font-family:var(--font-serif);font-size:14px;
+  line-height:1.75;color:var(--ink2);
+}
+.story-moral strong{color:var(--ink);font-weight:700}
+.wiki-source{
+  margin-top:1rem;padding-top:1rem;
+  border-top:1px solid var(--border);
+  font-size:12px;color:var(--ink3);
+  display:flex;align-items:center;gap:4px;
+}
+.wiki-source a{color:var(--purple-l);text-decoration:underline}
+
+/* ─────────────── SIDEBAR ─────────────── */
+.sidebar{position:sticky;top:80px}
+.sidebar-card{
+  background:var(--white);border:1px solid var(--border);
+  border-radius:var(--r-lg);padding:1.25rem;
+  margin-bottom:16px;box-shadow:var(--shadow);
+}
+.sidebar-title{
+  font-size:11px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.08em;color:var(--ink3);margin-bottom:12px;
+}
+.rel-item{
+  display:flex;gap:10px;align-items:center;
+  padding:10px;border-radius:var(--r);cursor:pointer;
+  transition:background .15s;margin-bottom:4px;
+}
+.rel-item:last-child{margin-bottom:0}
+.rel-item:hover{background:var(--cream)}
+.rel-thumb{
+  width:40px;height:44px;border-radius:7px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;flex-shrink:0;
+}
+.rel-info{flex:1;min-width:0}
+.rel-deity{font-size:10px;color:var(--ink3);font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.rel-title{font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rel-dur{font-size:11px;color:var(--ink3)}
+
+.about-chip{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:8px 14px;border-radius:var(--r);
+  font-size:13px;font-weight:600;
+  width:100%;justify-content:center;margin-top:6px;
+  border:1.5px solid var(--border);color:var(--ink2);
+  background:transparent;transition:background .15s;
+}
+.about-chip:hover{background:var(--cream)}
+
+/* ─────────────── ABOUT PAGE ─────────────── */
+.about-page{max-width:760px;margin:0 auto;padding:2.5rem 1.5rem 4rem}
+.about-hero-card{
+  background:linear-gradient(135deg,var(--purple-d),#4c1d95);
+  border-radius:var(--r-lg);padding:2.5rem;text-align:center;
+  margin-bottom:2.5rem;color:#fff;
+}
+.about-om{font-size:52px;margin-bottom:.5rem}
+.about-hero-card h2{font-size:26px;font-weight:800;margin-bottom:.6rem;letter-spacing:-.02em}
+.about-hero-card p{font-size:15px;color:#ddd6fe;line-height:1.8;max-width:480px;margin:0 auto}
+.about-section{margin-bottom:2rem}
+.about-section h3{font-size:17px;font-weight:700;margin-bottom:.6rem;color:var(--purple)}
+.about-section p,.about-section li{font-family:var(--font-serif);font-size:15px;line-height:1.85;color:var(--ink2)}
+.about-section ul{padding-left:1.2rem}
+.about-section li{margin-bottom:.4rem}
+.about-section strong{color:var(--ink);font-weight:700}
+.about-divider{height:1px;background:var(--border);margin:2rem 0}
+.deity-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin-top:1rem}
+.deity-card-sm{
+  background:var(--white);border:1px solid var(--border);
+  border-radius:var(--r);padding:14px 12px;text-align:center;
+}
+.deity-card-sm .d-emoji{font-size:28px;margin-bottom:6px}
+.deity-card-sm .d-name{font-size:13px;font-weight:700;color:var(--ink)}
+.deity-card-sm .d-trait{font-size:11px;color:var(--ink3);margin-top:2px}
+
+/* ─────────────── FOOTER ─────────────── */
+footer{
+  background:var(--purple-d);color:#c4b5fd;
+  text-align:center;padding:2rem 1.5rem;
+  font-size:13px;line-height:1.8;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+footer strong{color:#fff}
+footer a{color:#a78bfa;text-decoration:underline}
+</style>
+</head>
+<body>
+
+<!-- ════════ HEADER ════════ -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand" onclick="showPage('home')">
+      <div class="brand-mark">ॐ</div>
+      <div class="brand-text">
+        <div class="brand-name">Garbha Sanskar</div>
+        <div class="brand-tag">Sacred Stories · ગર્ભ સંસ્કાર</div>
+      </div>
+    </div>
+    <nav class="site-nav">
+      <button class="nav-btn active" id="nav-home" onclick="showPage('home')">Stories</button>
+      <button class="nav-btn" id="nav-about" onclick="showPage('about')">About</button>
+      <button class="nav-btn nav-btn-start" onclick="document.getElementById('library').scrollIntoView({behavior:'smooth'});showPage('home')">▶ Listen</button>
+    </nav>
+  </div>
+</header>
+
+<!-- ════════════════ HOME PAGE ════════════════ -->
+<div id="page-home" class="page active">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-eyebrow">🕉 Prenatal Wisdom · ☸ Ancient Tradition</div>
+    <h1>Stories that shape<br>a beautiful soul</h1>
+    <p class="hero-sub">Immerse your unborn child in the devotional stories of Lord Krishna, Mahavir, Hanuman, Shiv and Gautam Swami — in Gujarati and Hindi — the sacred practice of Garbha Sanskar.</p>
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="document.getElementById('library').scrollIntoView({behavior:'smooth'})">▶&nbsp; Begin Listening</button>
+      <button class="btn-ghost" onclick="showPage('about')">What is Garbha Sanskar?</button>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="hero-stat-num">12</div><div class="hero-stat-lbl">Sacred Stories</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">5</div><div class="hero-stat-lbl">Divine Deities</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">2</div><div class="hero-stat-lbl">Traditions</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">2</div><div class="hero-stat-lbl">Languages</div></div>
+    </div>
+  </section>
+
+  <!-- Library -->
+  <section class="library-section" id="library">
+    <div class="section-head">
+      <h2>All Stories</h2>
+      <div class="filter-row">
+        <button class="filter-chip fc-all on" id="fc-all" onclick="applyFilter('all')">All 12</button>
+        <button class="filter-chip fc-h" id="fc-h" onclick="applyFilter('hindu')">🕉 Hindu</button>
+        <button class="filter-chip fc-j" id="fc-j" onclick="applyFilter('jain')">☸ Jain</button>
+      </div>
+    </div>
+    <div class="cards-grid" id="cards-grid"></div>
+  </section>
+</div>
+
+<!-- ════════════════ ARTICLE / PLAYER PAGE ════════════════ -->
+<div id="page-article" class="page">
+  <div class="article-page">
+    <div class="breadcrumb">
+      <button class="breadcrumb-btn" onclick="showPage('home')">← All Stories</button>
+      <span class="breadcrumb-sep">/</span>
+      <span class="breadcrumb-cur" id="bc-cur">Story</span>
+    </div>
+    <div class="article-layout">
+
+      <!-- Main column -->
+      <div>
+        <!-- Hero + Video -->
+        <div class="article-hero" id="article-hero">
+          <div class="article-banner" id="article-banner">
+            <div class="article-deity-icon" id="article-icon"></div>
+            <div class="article-meta" id="article-meta"></div>
+          </div>
+          <div class="video-section" id="video-section">
+            <div class="video-label">▶ &nbsp;Watch / Listen</div>
+            <div class="video-container">
+              <div id="yt-player"></div>
+              <div class="video-fallback" id="video-fallback">
+                <div class="fallback-icon">🎬</div>
+                <div class="fallback-title">Video unavailable for embedding</div>
+                <div class="fallback-sub">Watch this story directly on YouTube</div>
+                <a class="fallback-link" id="fallback-yt-link" href="#" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story text -->
+        <div class="story-article" id="story-article">
+          <div class="story-article-header">📖 &nbsp;Katha — Story</div>
+          <div id="story-body"></div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-card">
+          <div class="sidebar-title">Continue Listening</div>
+          <div id="related-list"></div>
+        </div>
+        <div class="sidebar-card">
+          <div class="sidebar-title">About This Practice</div>
+          <p style="font-size:13px;color:var(--ink2);line-height:1.65;margin-bottom:.75rem">
+            Garbha Sanskar (ગર્ભ સંસ્કાર) is the ancient practice of nurturing an unborn child through sacred sounds, stories, and positive vibrations.
+          </p>
+          <button class="about-chip" onclick="showPage('about')">Learn more →</button>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════ ABOUT PAGE ════════════════ -->
+<div id="page-about" class="page">
+  <div class="about-page">
+    <div class="about-hero-card">
+      <div class="about-om">ॐ</div>
+      <h2>Garbha Sanskar</h2>
+      <p>The ancient Indian science of prenatal education — nurturing the soul of the child before birth through sacred stories, mantras, and devotional music.</p>
+    </div>
+
+    <div class="about-section">
+      <h3>What is Garbha Sanskar?</h3>
+      <p>Garbha Sanskar (ગર્ભ સંસ્કાર) is a Vedic tradition documented in texts including the <em>Charaka Samhita</em> and the <em>Ashtanga Hridayam</em>. It is based on the principle that a child's learning begins inside the womb. From the fifth month of pregnancy, the foetus develops hearing capability and begins responding to sound, emotion, and vibration from its environment.</p>
+      <p>The word <em>Garbha</em> means womb, and <em>Sanskar</em> (સંસ્કાર) means the imprinting of values, virtues, and culture. Together, they form a holistic prenatal practice involving sacred music, storytelling, meditation, and positive thinking designed to shape the character of the child even before birth.</p>
+      <p>The most cited example is <strong>Abhimanyu</strong>, the son of Arjuna, who learned the intricate military formation called the Chakravyuha while still in the womb of his mother Subhadra, as Krishna narrated it to her. This story, from the Mahabharata, illustrates the core belief: the foetus is a conscious, listening presence.</p>
+    </div>
+
+    <div class="about-divider"></div>
+
+    <div class="about-section">
+      <h3>Why these 5 deities?</h3>
+      <p>Each deity in this collection was chosen for the specific virtues their life stories embody — qualities that, through repeated listening, are believed to be imparted to the unborn child.</p>
+      <div class="deity-grid">
+        <div class="deity-card-sm"><div class="d-emoji">🦚</div><div class="d-name">Lord Krishna</div><div class="d-trait">Joy · Courage · Wisdom</div></div>
+        <div class="deity-card-sm"><div class="d-emoji">🌅</div><div class="d-name">Lord Hanuman</div><div class="d-trait">Devotion · Strength · Focus</div></div>
+        <div class="deity-card-sm"><div class="d-emoji">🌙</div><div class="d-name">Lord Shiv</div><div class="d-trait">Stillness · Compassion · Sacrifice</div></div>
+        <div class="deity-card-sm"><div class="d-emoji">🌿</div><div class="d-name">Lord Mahavir</div><div class="d-trait">Non-violence · Truth · Renunciation</div></div>
+        <div class="deity-card-sm"><div class="d-emoji">✨</div><div class="d-name">Gautam Swami</div><div class="d-trait">Humility · Wisdom · Liberation</div></div>
+      </div>
+    </div>
+
+    <div class="about-divider"></div>
+
+    <div class="about-section">
+      <h3>The Trishala Mata connection</h3>
+      <p>In Jain tradition, the most powerful Garbha Sanskar story is that of <strong>Queen Trishala</strong>, mother of Lord Mahavir. The night the great Tirthankara soul entered her womb, she saw <strong>14 auspicious dreams</strong> (ચૌદ સ્વપ્ન) — visions of an elephant, a bull, a lion, Goddess Lakshmi, and more. Learned scholars interpreted these dreams as signs of the extraordinary soul she was carrying. This story, unique to Jain scripture, is literally about the divine nature of the soul in the womb — making it the most perfectly suited Garbha Sanskar story in all of Indian tradition.</p>
+    </div>
+
+    <div class="about-divider"></div>
+
+    <div class="about-section">
+      <h3>How to use this website</h3>
+      <ul>
+        <li>Choose any story from the <strong>Stories</strong> page and press Play.</li>
+        <li>Listen in a calm, comfortable position — morning or before sleep is ideal.</li>
+        <li>Follow along with the written <em>katha</em> below the video for deeper engagement.</li>
+        <li>Stories are in <strong>Gujarati and Hindi</strong> — both languages are included across the library.</li>
+        <li>Repeat your favourite stories. Consistent, daily listening is the traditional recommendation.</li>
+      </ul>
+    </div>
+
+    <div style="text-align:center;margin-top:2.5rem">
+      <button class="btn-primary" onclick="showPage('home')">▶ Start Listening</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <strong>Garbha Sanskar — ગર્ભ સંસ્કાર</strong><br>
+  Sacred stories for mother and child · Gujarati &amp; Hindi<br>
+  <span style="font-size:12px;opacity:.6;margin-top:.3rem;display:block">
+    Story content sourced from <a href="https://en.wikipedia.org" target="_blank">Wikipedia</a> and traditional scriptures.
+    Videos embedded from YouTube. All rights belong to respective creators.
+  </span>
+</footer>
+
+<!-- YouTube IFrame API -->
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+// ══════════════════════════════════════════════════
+// STORY DATA  (all YouTube IDs verified embeddable)
+// ══════════════════════════════════════════════════
+const STORIES = [
+  // ── KRISHNA ──────────────────────────────────────
+  {
+    id:'krishna-janma',
+    title:'Krishna Janma',
+    subtitle:'कृष्ण जन्म — The Divine Birth',
+    deity:'Lord Krishna', faith:'hindu', dur:'~18 min',
+    ytId:'pad8N2rDssU',
+    ytTitle:'Krishna Katha | Shemaroo Bhakti Dham',
+    emoji:'🦚', cover:'#dbeafe',
+    bg:'linear-gradient(140deg,#1e3a5f,#1e40af)',
+    tags:['Janma','Bhakti','Divinity','Hope'],
+    excerpt:'The miraculous birth of Lord Krishna on a stormy Ashtami night — the soul who changed the world forever.',
+    text:`
+<h3>The Prophecy</h3>
+<p>According to the <em>Bhagavata Purana</em> and the <em>Harivamsa</em>, Lord Krishna was born in Mathura to Devaki and Vasudeva, who had been imprisoned by the tyrannical king Kansa — Devaki's own brother. A divine prophecy had declared that the eighth child of Devaki would be the cause of Kansa's death. To avert this fate, Kansa had imprisoned the couple and personally killed each of their seven children at birth.</p>
+<div class="story-verse verse-h">देवकी के गर्भ में आए प्रभु, रात की आंधी में जन्म लिया।<br>माता-पिता का दुःख हरने को, स्वयं परमेश्वर धरती पर आए।।</div>
+<h3>The Night of Rohini Nakshatra</h3>
+<p>Krishna was born at midnight on the eighth day (Ashtami) of the dark fortnight of the month of Bhadrapada — a night of tremendous storm, thunder and rain. At the moment of his birth, the prison was suffused with divine light. Vasudeva saw before him a four-armed form, which then transformed into a newborn infant and directed him to carry the child to the village of Gokul and exchange him with the newborn daughter of Nanda and Yashoda.</p>
+<p>Every lock in the prison opened. The guards fell into a deep, inexplicable sleep. Vasudeva placed baby Krishna in a wicker basket and waded into the flooding Yamuna river. According to the Bhagavata Purana, the river's waters parted, and the divine serpent Adishesha spread his many hoods like a canopy to shelter the child from the rain. Vasudeva carried Krishna safely to Gokul, exchanged the children, and returned to the prison — where the locks closed again of their own accord.</p>
+<h3>The Arrival in Gokul</h3>
+<p>When Kansa arrived at dawn and attempted to kill the infant girl, she slipped from his hands, rose into the sky, and revealed herself as the goddess Yogamaya. She declared: "The one destined to kill you, O Kansa, has already been born and is safe." Krishna had arrived. He would grow up in Gokul and Vrindavan, cared for by Yashoda and Nanda, filling the world with love, music, and the sound of his flute.</p>
+<div class="story-moral"><strong>🌸 For the mother:</strong> Even in the darkest prison, divine grace finds a way. A soul born in love and devotion carries within it the light that no darkness can contain.</div>
+<div class="wiki-source">📚 Source: <a href="https://en.wikipedia.org/wiki/Krishna" target="_blank">Wikipedia — Krishna</a> · Bhagavata Purana, Book 10</div>`
+  },
+  {
+    id:'kalia-naag',
+    title:'Kalia Naag Daman',
+    subtitle:'कालिया नाग दमन — Dancing on the Serpent',
+    deity:'Lord Krishna', faith:'hindu', dur:'~12 min',
+    ytId:'r427tPpgLzA',
+    ytTitle:'Kalia Naag — Bhakti Kahani',
+    emoji:'🦚', cover:'#dbeafe',
+    bg:'linear-gradient(140deg,#1e3a5f,#1e40af)',
+    tags:['Courage','Protection','Grace','Fearlessness'],
+    excerpt:'Young Krishna fearlessly dances on the hundred hoods of the terrible serpent Kalia — purifying the Yamuna and protecting Gokul.',
+    text:`
+<h3>The Poisoned River</h3>
+<p>According to the <em>Bhagavata Purana</em> (Canto 10, Chapter 16), the great serpent Kalia and his family had settled in a deep, whirling pool of the Yamuna called Kaliya-hrada. Kalia was so venomous that the entire surrounding area — water, trees, fish, and birds — had been poisoned. The people of Vrindavan could not drink from the river or graze their cattle near it. Anyone who went near perished.</p>
+<div class="story-verse verse-h">यमुना के नीले जल में था, कालिया का जहर मिला।<br>बालकृष्ण कूदे निर्भय होकर, नाग का दर्प गिला।।</div>
+<h3>Krishna Enters the Whirlpool</h3>
+<p>One day, while playing with his cowherd friends, a ball fell into the whirlpool. Without hesitation, Krishna climbed a Kadamba tree and leaped into the dark waters. Kalia, enraged by this intrusion, coiled around Krishna with tremendous crushing force. The boy's companions ran back to Vrindavan in panic. Yashoda and Nanda rushed to the riverbank, unable to watch as the entire village trembled with fear.</p>
+<h3>The Divine Dance (Kaliya Daman)</h3>
+<p>At the moment when hope seemed lost, Krishna suddenly expanded his form to an immense size, breaking Kalia's grip. He leaped onto the serpent's massive hood and began to dance. The divine weight of Krishna's feet increased with every step, and Kalia began to vomit blood. His wives, the Nagapatnis, came forward with folded hands and begged Krishna for mercy on their husband's life. Moved by their devotion, Krishna stopped and spared Kalia — but commanded him to leave the Yamuna forever and take his family to the ocean. Garuda, the eagle vehicle of Vishnu, whom Kalia had feared, would not trouble him once Krishna's footprints were on his hood.</p>
+<p>The Yamuna was purified instantly. The poison disappeared. The trees along the bank bloomed again. The people celebrated through the night.</p>
+<div class="story-moral"><strong>🌸 For the mother:</strong> True fearlessness comes not from force, but from divine love. A child who is immersed in devotion walks fearlessly through the darkest waters of life.</div>
+<div class="wiki-source">📚 Source: <a href="https://en.wikipedia.org/wiki/Kaliya" target="_blank">Wikipedia — Kaliya</a> · Bhagavata Purana 10.16–17</div>`
+  },
+  {
+    id:'govardhan',
+    title:'Govardhan Parvat',
+    subtitle:'गोवर्धन पर्वत — The Mountain Lifted',
+    deity:'Lord Krishna', faith:'hindu', dur:'~14 min',
+    ytId:'ojaFT6B_daQ',
+    ytTitle:'Govardhan Ji Ki Katha',
+    emoji:'🦚', cover:'#dbeafe',
+    bg:'linear-gradient(140deg,#1e3a5f,#1e40af)',
+    tags:['Protection','Faith','Community','Humility'],
+    excerpt:'Krishna lifts the Govardhan mountain on his little finger for seven days, sheltering all of Gokul from Indra\'s catastrophic storm.',
+    text:`
+<h3>The Challenge to Indra</h3>
+<p>The story of Govardhan Puja is narrated in the <em>Bhagavata Purana</em> (10.24–26). Each year, the people of Gokul performed a large festival in worship of Indra, the king of the gods and the lord of rain, out of fear that he would withhold the rains if not propitiated. Young Krishna — barely seven years old at the time — questioned this tradition. He asked his father Nanda: why worship out of fear, when it is the Govardhan mountain that gives our cows their grass, and the rain that falls is simply the natural cycle of the world?</p>
+<div class="story-verse verse-h">गोवर्धन गिरधर कहलाए, उंगली पे उठाया पहाड़।<br>सात दिन सात रात खड़े रहे, भक्तन का किया उपकार।।</div>
+<h3>Indra's Wrath</h3>
+<p>Convinced by Krishna, the villagers redirected their worship to Govardhan mountain. Indra, furious at being ignored, unleashed his full arsenal — sending the Samvartaka clouds, which are the clouds of cosmic dissolution, upon Vrindavan. The rains were unprecedented. Flooding, lightning, and howling winds threatened to destroy everything. Cattle and people fled in all directions, seeking Krishna's help.</p>
+<h3>Seven Days, One Finger</h3>
+<p>Krishna walked calmly to the Govardhan mountain and lifted it on the tip of his little finger as easily as a child picks up a mushroom. He told the people: "Come, bring your cattle and belongings under the mountain." For seven consecutive days and nights, the entire population of Gokul — along with all their animals — took shelter under Govardhan, which Krishna held aloft without eating, sleeping, or resting.</p>
+<p>Indra finally relented, recalled the storms, and descended to bow before Krishna. He acknowledged that the Lord was no ordinary cowherd. The mountain was gently returned to its place. Govardhan hill, to this day, is considered a form of Krishna himself and is circumambulated by devotees in the annual Govardhan Puja (celebrated the day after Diwali).</p>
+<div class="story-moral"><strong>🌸 For the mother:</strong> True strength serves not itself but those it loves. A parent who lifts the mountain of difficulty so their child can shelter beneath them is living this very story.</div>
+<div class="wiki-source">📚 Source: <a href="https://en.wikipedia.org/wiki/Govardhan_Puja" target="_blank">Wikipedia — Govardhan Puja</a> · Bhagavata Purana 10.24</div>`
+  },
+  // ── HANUMAN ──────────────────────────────────────
+  {
+    id:'hanuman-bal',
+    title:'Hanuman Janma Katha',
+    subtitle:'हनुमान जन्म कथा — Birth of the Wind God\'s Son',
+    deity:'Lord Hanuman', faith:'hindu', dur:'~22 min',
+    ytId:'kroeNPEFUHw',
+    ytTitle:'हनुमान जी की संपूर्ण जन्म कथा — Satya Adhikari',
+    emoji:'🌅', cover:'#fef3c7',
+    bg:'linear-gradient(140deg,#7c2d12,#b45309)',
+    tags:['Birth','Shakti','Devotion','Blessings'],
+    excerpt:'The extraordinary birth of Hanuman — son of Anjana and the Wind God Vayu — and his divine childhood that shook the heavens.',
+    text:`
+<h3>The Birth of Anjaneya</h3>
+<p>The birth of Lord Hanuman is narrated in the <em>Valmiki Ramayana</em>, the <em>Shiva Purana</em>, and various regional traditions. Hanuman (also known as Anjaneya, son of Anjana) was born to Anjana, an apsara who had been cursed to take the form of a female monkey, and Kesari, a powerful vanara chief. According to the Shiva Purana, Lord Shiva himself transferred his amsha (divine energy) to be born through Anjana by the power of Vayu, the wind god — making Hanuman the spiritual son of both Shiva and Vayu, and explaining his extraordinary strength, speed, and indestructibility.</p>
+<div class="story-verse verse-h">अंजनी के लाल, पवन के पुत्र, जगत में आए हनुमंत।<br>देवन ने दिए वरदान अपार, शक्ति-ज्ञान-विवेक अनंत।।</div>
+<h3>The Child Who Reached for the Sun</h3>
+<p>From his very first day, it was evident that this was no ordinary child. The infant Hanuman, ravenously hungry one morning, looked up at the orange sunrise and mistook the glowing disc for a ripe fruit. In an instant, he leaped into the sky with the speed of lightning, crossing the entire atmosphere, intending to seize the sun.</p>
+<p>On that day, Rahu (the shadow demon who periodically devours the sun) was approaching for a solar eclipse. Finding Hanuman already there, Rahu fled to Indra in terror. Indra, fearing the infant's power, hurled his thunderbolt (vajra) at the child, striking him on the jaw (hanu in Sanskrit — hence the name Hanuman). The child fell to earth unconscious.</p>
+<h3>The Blessings of the Gods</h3>
+<p>Vayu, his divine father, grief-stricken, withdrew all the air from the universe in anger. Living beings across the three worlds began to suffocate. The gods rushed in a panic to beg forgiveness and restore Hanuman to life. Each god bestowed a boon upon the child: Brahma gave him immunity from the Brahmastra weapon; Vishnu gave him knowledge of scriptures; Shiva gave him longevity and fearlessness; Surya the sun god gave him knowledge of all the sixty-four arts; Indra himself gave him immunity from his own thunderbolt. Kubera gifted him lasting happiness. Thus Hanuman rose with more power than before.</p>
+<div class="story-moral"><strong>🌸 For the mother:</strong> A child raised with the blessings of faith, love, and courage grows with strength that the entire universe respects and protects.</div>
+<div class="wiki-source">📚 Source: <a href="https://en.wikipedia.org/wiki/Hanuman" target="_blank">Wikipedia — Hanuman</a> · Valmiki Ramayana, Kishkindha Kanda</div>`
+  },
+  {
+    id:'sunderkand',
+    title:'Sunderkand',
+    subtitle:'सुंदरकांड — Hanuman\'s Great Leap of Devotion',
+    deity:'Lord Hanuman', faith:'hindu', dur:'~45 min',
+    ytId:'lhYAVTZwWns',
+    ytTitle:'Sampurna Sunderkand Path — Shemaroo Bhakti',
+    emoji:'🌅', cover:'#fef3c7',
+    bg:'linear-gradient(140deg,#7c2d12,#b45309)',
+    tags:['Devotion','Focus','Victory','Faith'],
+    excerpt:'The fifth canto of the Ramayana — Hanuman\'s extraordinary ocean crossing, his meeting with Sita, and the burning of Lanka — is the most powerful spiritual text in the Valmiki tradition.',
+    text:`
+<h3>The Fifth Canto of the Valmiki Ramayana</h3>
+<p>Sunderkand (सुंदरकांड) is the fifth and most beloved chapter of the Valmiki Ramayana. It is the only chapter named after its hero rather than its location or events — "Sundar" referring to Hanuman himself, whose form, deeds, and mind are considered supremely beautiful (sundar). It comprises 68 sargas (cantos) and is the longest chapter of the epic. It is the only chapter that many Hindus recite independently as a complete spiritual practice, believing it to bestow courage, protection, and the removal of obstacles.</p>
+<div class="story-verse verse-h">श्रीरामदूत अतुलित बलधामा। अंजनिपुत्र पवनसुत नामा।।<br>महावीर विक्रम बजरंगी। कुमति निवार सुमति के संगी।।<br>— तुलसीदास, हनुमान चालीसा</div>
+<h3>The Great Leap</h3>
+<p>After Sita was abducted by Ravana, the search party arrived at the southern shore of the Indian Ocean, facing the impossible crossing to Lanka. It was the aged bear Jambavan who reminded Hanuman of his true, unbounded powers — powers he had forgotten due to a childhood curse. Remembering his divine nature, Hanuman grew to an immense size on the summit of Mount Mahendra and leaped across the 100-yojana ocean in a single bound, crossing in moments what no living being could have crossed.</p>
+<h3>In Lanka — The Meeting with Sita</h3>
+<p>In Lanka, Hanuman searched tirelessly through the city in his tiny form. He found Sita in the Ashoka grove, guarded by Rakshasis, refusing all of Ravana's advances, sustained only by her unwavering devotion to Ram. Hanuman revealed himself, gave Sita Ram's ring as proof of his identity, and received her Chudamani (jewel) to carry back to Ram as her message of hope. He offered to carry her on his back — she declined, saying only Ram must rescue her.</p>
+<h3>The Burning of Lanka</h3>
+<p>Allowing himself to be captured to gather intelligence, Hanuman was dragged before Ravana, whose soldiers tied burning cloth to his tail. But Hanuman used the fire to systematically burn all of Lanka — all its towers, palaces, and military formations — before extinguishing his tail in the ocean and returning to Ram with the great news. Every moment, his mind remained fixed on one name alone: Ram.</p>
+<div class="story-moral"><strong>🌸 For the mother:</strong> When the mind is anchored in love and purpose, no ocean is too wide, no darkness too complete. Devotion gives us wings that no force in the world can clip.</div>
+<div class="wiki-source">📚 Source: <a href="https://en.wikipedia.org/wiki/Sundara_Kanda" target="_blank">Wikipedia — Sundara Kanda</a> · Valmiki Ramayana, Canto 5</div>`
+  },
+  // ── SHIV ──────────────────────────────────────
+  {
+    id:'shiv-parvati',
+    title:'Shiv–Parvati Vivah',
+    subtitle:'शिव–पार्वती विवाह — The Divine Union',
+    deity:'Lord Shiv', faith:'hindu', dur:'~16 min',
+    ytId:'77tvUVdidgs',
+    ytTitle:'Shiv Parvati Vivah Katha — Suresh Wadkar & Sohini Mishra',
+    emoji:'🌙', cover:'#ede9fe',
+    bg:'linear-gradient(140deg,#2e1065,#5b21b6)',
+    tags:['Love','Patience','Devotion','Tapasya'],
+    excerpt:'Parvati\'s extraordinary tapasya across lifetimes to win the heart of the world\'s greatest ascetic — a love story written across ages.',
+    text:`
+<h3>Sati and Shiv's Grief</h3>
+<p>In the <em>Shiva Purana</em>, Shiv had previously been married to Sati, daughter of Daksha. When Daksha insulted Shiv at a great yagna (fire sacrifice) and Sati gave up her life in protest, Shiv was devastated. He wandered the universe in grief, carrying Sati's body, until Vishnu intervened and her body fell as 51 sacred Shakti Peethas across the land. Shiv withdrew into deep meditation in the Himalayas, renouncing all worldly involvement.</p>
+<div class="story-verse verse-h">पार्वती ने की कठोर तपस्या, हिम में खड़ी रहीं अडिग।<br>शिव ने देखा प्रेम का ताप, मन का अहंकार हो गया विगत।।</div>
+<h3>Parvati — The Reincarnation of Sati</h3>
+<p>Sati was reborn as Parvati (also Uma), the daughter of Himavan (the Himalayan mountain king) and Mena. From childhood she was devoted to Shiv. When the gods implored Shiv to emerge from meditation and marry again — so that the divine child Kartikeya could be born to defeat the demon Tarakasura — the great sage Narada advised Parvati that she would have to earn Shiv's attention through tapasya (austerity and meditation).</p>
+<h3>The Great Tapasya</h3>
+<p>Parvati went to the forest and began an increasingly severe tapasya that lasted for thousands of years. She gave up food, surviving first on dry leaves, then on air alone, then even discarding the leaves (hence the name Uma — "U" meaning without, "ma" meaning leaves — in one interpretation). She stood in water during winter, sat surrounded by fire in summer, and meditated in pouring rain. Shiv, testing her, sent the seven sages to dissuade her; she refused. He came himself in disguise and insulted Shiv — she refused to hear a word against him.</p>
+<p>Finally, Shiv revealed himself, overcome by her single-pointed devotion. He accepted her as his equal and eternal consort. Their marriage, celebrated on Kailash, was attended by all gods, sages, rivers, mountains and living creatures. The marriage of Shiv and Parvati — Purusha and Prakriti — is considered the template of all devotion in the universe.</p>
+<div class="story-moral"><strong>🌸 For the mother:</strong> The love that endures — patient, unwavering, that neither flattery can buy nor insult can shake — that love rewrites the universe.</div>
+<div class="wiki-source">📚 Source: <a href="https://en.wikipedia.org/wiki/Parvati" target="_blank">Wikipedia — Parvati</a> · Shiva Purana, Rudra Samhita</div>`
+  },
+  {
+    id:'ganga-avaran',
+    title:'Ganga Avatarana',
+    subtitle:'गंगा अवतरण — Shiv Catches the Sacred River',
+    deity:'Lord Shiv', faith:'hindu', dur:'~14 min',
+    ytId:'ujNY8tY0Aqg',
+    ytTitle:'Shankar Teri Jata Se Behti Ganga — Shiv Bhajan',
+    emoji:'🌙', cover:'#ede9fe',
+    bg:'linear-gradient(140deg,#2e1065,#5b21b6)',
+    tags:['Sacrifice','Compassion','Tapasya','Liberation'],
+    excerpt:'King Bhagiratha\'s extraordinary multi-generational tapasya to bring Ganga from heaven, and Shiv\'s compassion in catching the cosmic river in his locks.',
+    text:`
+<h3>The Sixty Thousand Sons</h3>
+<p>The story of Ganga's descent to earth (Gangavataran or Bhagiratha Prayatna) is narrated in the <em>Valmiki Ramayana</em> (Bala Kanda) and the <em>Mahabharata</em>. King Sagara of the Ikshvaku dynasty performed an Ashwamedha (horse sacrifice). The horse was stolen by the god Indra and hidden near where the sage Kapila meditated. When Sagara's sixty thousand sons went to retrieve the horse, they disturbed Kapila's meditation — and the enraged sage reduced them all to ash with a glance. Their souls could not depart because they had not been given proper last rites with sacred water.</p>
+<div class="story-verse verse-h">शंकर तेरी जटा से बहती है गंग धारा।<br>तेरे बिना कौन है हमारा, तू ही है सहारा।।</div>
+<h3>Bhagiratha's Tapasya</h3>
+<p>Sagara's descendant, King Bhagiratha, resolved to bring the Ganga — the purest of all waters — to earth so she could touch the ashes of the sixty thousand sons and grant them liberation. He began an intense tapasya directed at Brahma, who was pleased and agreed — but warned that the force of Ganga's fall from the celestial plane would shatter the earth itself. The only being who could absorb that force was Shiv.</p>
+<p>Bhagiratha performed further tapasya directed at Shiv, who agreed to receive Ganga in his matted locks (jata). When Ganga descended in all her fury — determined to overwhelm even Shiv with her current — Shiv calmly absorbed the entire river into his hair. Ganga searched for years among his locks but could not find her way out. Bhagiratha performed more prayer, and Shiv finally released a gentle stream from his locks, which became the sacred Ganges as we know it.</p>
+<h3>Liberation of the Ancestors</h3>
+<p>Bhagiratha walked in front of the river, guiding it toward the ocean. Wherever the Ganga flowed, the ashes of the sixty thousand ancestors were touched, and all sixty thousand souls were liberated. The Ganges to this day flows from the Gangotri glacier in the Himalayas to the sea, and touching its waters is believed to confer liberation upon any soul — living or departed.</p>
+<div class="story-moral"><strong>🌸 For the mother:</strong> The most selfless act is the one done not for yourself but for those who cannot help themselves. Bhagiratha's prayatna — tireless effort — is a template for devoted love across generations.</div>
+<div class="wiki-source">📚 Source: <a href="https://en.wikipedia.org/wiki/Gangavataran" target="_blank">Wikipedia — Gangavataran</a> · Valmiki Ramayana, Bala Kanda 38–44</div>`
+  },
+  // ── MAHAVIR ──────────────────────────────────────
+  {
+    id:'trishala-swapna',
+    title:'Trishala Matana 14 Swapna',
+    subtitle:'ત્રિશળા માતાના ૧૪ સ્વપ્ન — The 14 Auspicious Dreams',
+    deity:'Lord Mahavir', faith:'jain', dur:'~20 min',
+    ytId:'imr2vr8r_Lo',
+    ytTitle:'Shri Mahavir Bhagwan — Gujarati | Trishala Mata | Pujya Niruma',
+    emoji:'🌿', cover:'#d1fae5',
+    bg:'linear-gradient(140deg,#064e3b,#065f46)',
+    tags:['Pregnancy','Dreams','Divinity','Jain','Gujarati'],
+    excerpt:'Queen Trishala sees 14 extraordinary auspicious dreams the very night the soul of the 24th Tirthankara enters her womb — the most sacred Garbha Sanskar story in all of Jain scripture.',
+    text:`
+<h3>The Night of the Palanquin of the Soul</h3>
+<p>The fourteen auspicious dreams of Queen Trishala (Chaudah Swapna) are documented in the <em>Acharanga Sutra</em> and the <em>Kalpa Sutra</em>, two of the most sacred texts of Jain scripture. The Kalpa Sutra (attributed to Bhadrabahu, c. 4th century BCE) gives a meticulous account: on the night that the soul of the Tirthankara entered Trishala's womb from the womb of a Brahmin woman Devananda (whom it had mistakenly entered first), the queen saw the 14 great dreams in succession.</p>
+<div class="story-verse verse-j">ત્રિશળા માતાએ ચૌદ સ્વપ્ન જોયાં,<br>ઉત્કૃષ્ટ આત્માના ગર્ભ–પ્રવેશ–ટાણે।<br>ઇન્દ્ર–દેવ ઉત્સવ મનાવ્યો,<br>મહાવીર–પ્રભુ–જન્મ–નિશ્ચે–ઓળખ્યા–ઓળખ્ ane।।</div>
+<h3>The Fourteen Dreams</h3>
+<p>The Kalpa Sutra lists the fourteen dreams in order. Each is a symbol interpreted by the royal scholars to signify the qualities of the extraordinary soul in the womb:</p>
+<p><strong>1. A white elephant</strong> (gaja) — supreme strength, stability, and the power to sustain all; <strong>2. A white bull</strong> (vrishabha) — virtue, dharma, and the teacher of right conduct; <strong>3. A roaring lion</strong> (simha) — courage, fearlessness, and sovereignty over all; <strong>4. The goddess Lakshmi</strong> (Sri) — prosperity, auspiciousness, and the wealth of knowledge; <strong>5. A garland of flowers</strong> — the fragrance of merit accumulated across lifetimes; <strong>6. The full moon</strong> (chandra) — the cooling of all suffering and complete equanimity; <strong>7. The rising sun</strong> (surya) — the illumination of truth, the dispeller of spiritual darkness; <strong>8. A golden flag</strong> — the proclamation of victory of dharma over all opposition; <strong>9. A full silver vessel</strong> — purity of heart and the vessel of liberation; <strong>10. A lake of lotuses</strong> — spiritual beauty untouched by the world; <strong>11. A celestial ocean of milk</strong> — the boundlessness of true knowledge; <strong>12. A celestial palace</strong> — the palace of perfect liberation; <strong>13. A heap of jewels</strong> — the abundance of virtues; <strong>14. A smokeless fire</strong> — the burning away of all karma without leaving any trace.</p>
+<h3>The Interpretation</h3>
+<p>King Siddhartha summoned sixty-four interpreters of dreams who unanimously declared: this soul will be either a Chakravarti (universal emperor) or a Tirthankara — a ford-builder, one who will guide all of humanity across the ocean of suffering. Scholars note that among all the Tirthankaras, Mahavir was the only one whose mother saw 14 dreams instead of the usual 16 — because the soul first entered Devananda's womb before being transferred. This makes the Trishala story uniquely rich in Jain tradition.</p>
+<div class="story-moral"><strong>🌸 For the mother:</strong> This is Garbha Sanskar at its most profound — the universe itself announcing the greatness of the soul in the mother's womb. Every mother who listens with devotion participates in this sacred announcement.</div>
+<div class="wiki-source">📚 Source: <a href="https://en.wikipedia.org/wiki/Trishala" target="_blank">Wikipedia — Trishala</a> · Kalpa Sutra of Bhadrabahu</div>`
+  },
+  {
+    id:'mahavir-diksha',
+    title:'Mahavir Swami Diksha',
+    subtitle:'મહાવીર સ્વામી દીક્ષા — The Great Renunciation',
+    deity:'Lord Mahavir', faith:'jain', dur:'~18 min',
+    ytId:'GZdafLhz8hA',
+    ytTitle:'Mahavir Swami Ki Katha — Devesh Kundan | 2025',
+    emoji:'🌿', cover:'#d1fae5',
+    bg:'linear-gradient(140deg,#064e3b,#065f46)',
+    tags:['Renunciation','Courage','Truth','Monk'],
+    excerpt:'At 30, Prince Vardhamana leaves behind a kingdom, a family, and every earthly comfort — choosing the path of complete non-attachment and truth.',
+    text:`
+<h3>Prince Vardhamana</h3>
+<p>Vardhamana — who would later be known to the world as Mahavira (the Great Hero) — was born c. 599 BCE in Kundagrama (near modern Vaishali, Bihar) to King Siddhartha and Queen Trishala. He grew up in royal comfort, was well educated, and was known for extraordinary physical strength and complete fearlessness even as a child. Various Jain texts record episodes of the young prince calmly subduing wild animals and other boys who tested him, without a trace of anger — always with equanimity.</p>
+<div class="story-verse verse-j">ત્યાગ્યો રાજ–મહેલ, ત્યાગ્યા ઠાઠ–ઠઠારા।<br>વર્ધમાન ચાલ્યા વ્રત ઉઠાવી, સત્ય–માર્ગ ઉઘાડ્યો ન્યારા।।</div>
+<h3>Waiting for His Parents</h3>
+<p>From childhood, Vardhamana wished to become a monk. However, out of respect for his parents, he waited until their passing before pursuing renunciation. After both his parents died (they voluntarily fasted to death — a practice called Sallekhana — which was considered noble in Jain tradition), Vardhamana requested his elder brother Nandivardhana's permission and, after a year's delay, received it at age 30.</p>
+<h3>The Day of Diksha</h3>
+<p>According to the Kalpa Sutra, on the tenth day of the dark half of Margashirsha (November–December), Vardhamana departed from his royal household in a palanquin to the forest. There, under an Ashoka tree, he sat down, removed his garments, and pulled out his hair in five handfuls (pancha-mushthi loch) — the traditional Jain monk's initiation, still practiced today. The gods descended to witness. From that moment, he took the five great vows (mahavrata): complete non-violence (ahimsa), complete truth (satya), non-stealing (asteya), celibacy (brahmacharya), and non-possessiveness (aparigraha). He kept only a single robe, which he soon abandoned as well, walking the earth completely without possessions for the next 12 years.</p>
+<div class="story-moral"><strong>🌸 For the mother:</strong> The deepest courage is not dramatic — it is the quiet, daily decision to release attachment and walk toward truth. A life begun in this spirit shapes a soul of extraordinary inner freedom.</div>
+<div class="wiki-source">📚 Source: <a href="https://en.wikipedia.org/wiki/Mahavira" target="_blank">Wikipedia — Mahavira</a> · Kalpa Sutra; Acharanga Sutra</div>`
+  },
+  {
+    id:'mahavir-keval',
+    title:'Mahavir Keval Gyan',
+    subtitle:'મહાવીર કેવળ જ્ઞાન — The Moment of Omniscience',
+    deity:'Lord Mahavir', faith:'jain', dur:'~15 min',
+    ytId:'gUFCyrP-iT0',
+    ytTitle:'Mahavir Swami Keval Gyan Kalyanak',
+    emoji:'🌿', cover:'#d1fae5',
+    bg:'linear-gradient(140deg,#064e3b,#065f46)',
+    tags:['Enlightenment','Omniscience','Liberation','Kalyanak'],
+    excerpt:'After 12 years of complete renunciation, on a summer day on the banks of the Rijuvalika river, the last veil of karma dissolves — and the universe becomes perfectly clear.',
+    text:`
+<h3>Twelve Years of Wandering</h3>
+<p>For twelve years, two months, and fifteen days after his diksha, Mahavira wandered across the Indian subcontinent in complete silence and non-attachment, wearing no clothes, carrying nothing, eating only what was given to him in a cupped hand. He endured scorching heat, biting cold, and monsoon floods without shelter. He sat in meditation through attacks by animals, insects, and villagers. The <em>Acharanga Sutra</em> describes in extraordinary detail the hardships he bore, not with stoicism, but with equanimity — remaining completely unattached to both pleasure and pain.</p>
+<div class="story-verse verse-j">ઋજુવાળિકા–નદી–તીરે, સાળ–વૃક્ષ તળે ધ્યાન ધર્યું।<br>ત્રિભુવન ઉઘડ્યું ક્ષણ–ભ–ર, વર્ધમાન–ને–કેવળ–જ્ઞાન–મળ્યું।।</div>
+<h3>The Day of Keval Gyan</h3>
+<p>On the tenth day of the bright half of the month of Vaishakha (April–May), Vardhamana was meditating under a Sala tree on the bank of the Rijuvalika (Rijupallika) river, near the town of Jrimbhikagrama in Bihar. He sat in a squatting posture with hands clasped, the sun blazing on him. In a single transcendent moment, all four destructive karmas (ghatin karma) dissolved simultaneously. The entire universe — every atom, every being, every event across all of time and space — became directly perceptible to him. He had attained Keval Gyan — perfect, omniscient, unbounded knowledge. He had become a Jina (victor) and a Tirthankara.</p>
+<h3>The Samavasaran</h3>
+<p>According to Jain scripture, at the moment of Mahavira's Keval Gyan, Indra and all the gods descended and constructed a divine assembly hall called the Samavasaran — a perfectly structured sacred space — where Mahavira would teach. The divine sounds that emerged spontaneously from his presence (called Divya-dhvani) were understood simultaneously by all beings in all languages. He spent the next 30 years teaching the path of ahimsa (non-violence), anekantavada (many-sidedness of truth), and aparigraha (non-possessiveness) to hundreds of thousands of listeners.</p>
+<div class="story-moral"><strong>🌸 For the mother:</strong> Every soul contains infinite potential — but it unfolds only through patient, sustained, fearless inner work. The blossoming of wisdom cannot be rushed. It can only be earned.</div>
+<div class="wiki-source">📚 Source: <a href="https://en.wikipedia.org/wiki/Mahavira" target="_blank">Wikipedia — Mahavira</a> · Kalpa Sutra, §120</div>`
+  },
+  // ── GAUTAM SWAMI ──────────────────────────────────────
+  {
+    id:'gautam-meeting',
+    title:'Gautam Swami — First Meeting with Mahavir',
+    subtitle:'ગૌતમ સ્વામી — ગર્વ ઓગળ્યો, ગુરુ મળ્યા',
+    deity:'Gautam Swami', faith:'jain', dur:'~25 min',
+    ytId:'Nnrg0jfU5wQ',
+    ytTitle:'Life Story of Gautam Swami — Jain Talks',
+    emoji:'✨', cover:'#d1fae5',
+    bg:'linear-gradient(140deg,#134e4a,#0f766e)',
+    tags:['Humility','Pride','Surrender','Wisdom'],
+    excerpt:'Indrabhuti Gautam — the most learned Brahmin of his age — marches to Mahavir to win a debate, and returns as his most devoted disciple.',
+    text:`
+<h3>Indrabhuti Gautam — The Greatest Scholar</h3>
+<p>Indrabhuti Gautam (also known as Gautam Swami or Gautama) was a Brahmin scholar of extraordinary learning, born in Gobbar village in Magadha. He had mastered all branches of Vedic knowledge — the four Vedas, the six Vedangas, and seventeen other branches of knowledge — and had a reputation across the land. He maintained five hundred disciples of his own, each themselves highly accomplished. He was deeply proud of his knowledge and his standing.</p>
+<div class="story-verse verse-j">ઇન્દ્રભૂતિ ઉઠ્યા ગર્વ–ભ–ર, ઝઘડો કરવા મહાવીર–પ–ર।<br>પ–ળ–ભ–ર–માં ઓગળ્ gio ahamkaar, shishya banya nishkampar।।</div>
+<h3>Going to Debate Mahavira</h3>
+<p>When Mahavira established his Samavasaran near Apapapuri (modern Pawapuri, Bihar), crowds were flocking to him. Indrabhuti heard about this wandering monk who was drawing away people from the traditional Vedic path. Angry and contemptuous, he set out with his five hundred disciples to publicly defeat this upstart in philosophical debate and restore the prestige of Brahminical learning.</p>
+<p>As Indrabhuti approached the Samavasaran, something extraordinary happened. Before he had spoken a single word, Mahavira addressed him by name and spoke directly to the deepest secret doubt in Indrabhuti's heart — a doubt about the nature of the soul (jiva) that Indrabhuti had never dared voice to anyone, that he had hidden beneath layers of confident argumentation for years.</p>
+<h3>The Dissolution of Pride</h3>
+<p>In that instant, Indrabhuti's pride dissolved like salt in water. This was not merely a learned man — this was an omniscient being who could see directly into the soul. The debate he had prepared was unnecessary. The life he had lived — brilliant but pride-driven — suddenly seemed small. With tears flowing, Indrabhuti fell at Mahavira's feet and asked to be accepted as a disciple. His five hundred followers did the same. Indrabhuti became Mahavira's first and chief Gandhar (chief disciple) — responsible for organizing and transmitting all of Mahavira's teachings. He served his guru for 30 years.</p>
+<div class="story-moral"><strong>🌸 For the mother:</strong> The deepest wisdom is preceded by the most complete surrender of pride. A heart emptied of arrogance becomes like a vessel that can hold the whole ocean of truth.</div>
+<div class="wiki-source">📚 Source: <a href="https://en.wikipedia.org/wiki/Gautama_Svami" target="_blank">Wikipedia — Gautama Svami</a> · Kalpa Sutra; Uttaradhyayana Sutra</div>`
+  },
+  {
+    id:'gautam-keval',
+    title:'Gautam Swami Keval Gyan',
+    subtitle:'ગૌતમ સ્વામી — છૂટ્યો છેલ્લો ધાગો',
+    deity:'Gautam Swami', faith:'jain', dur:'~20 min',
+    ytId:'XzdMiuI6Pc8',
+    ytTitle:'Gautam Swami Kevalgyan — Diwali Special',
+    emoji:'✨', cover:'#d1fae5',
+    bg:'linear-gradient(140deg,#134e4a,#0f766e)',
+    tags:['Liberation','Letting Go','Love','Diwali'],
+    excerpt:'On the night of Mahavir\'s nirvana, the last thread of Gautam\'s attachment snaps — and the lamp of Keval Gyan is lit. This is the true story of Diwali.',
+    text:`
+<h3>Thirty Years of Service</h3>
+<p>For thirty years after becoming Mahavira's first disciple, Indrabhuti Gautam served his guru with a love that was simultaneously his greatest strength and — as the Jain tradition explains — the last remaining thread of karma keeping him from liberation. His knowledge was complete, his vows unbroken, his equanimity extraordinary. But he loved Mahavira — his guru, his sun, the center of his universe — with an attachment that, however pure, still constituted a bond.</p>
+<div class="story-verse verse-j">oi gayo nath mahavir, oi rudi gautam swami।<br>ek pal mein vairaag liyo, aatma thai gayi svami–svami।।</div>
+<h3>The Night of Mahavira's Nirvana</h3>
+<p>On the night of Kartik Amavasya (the new moon of October–November), the night that Mahavira was approaching his final nirvana (liberation from the cycle of rebirth), he sent Gautam away on a teaching errand to a man named Devasharma. Scholars note this was deliberate — the guru's final act of grace for his most beloved disciple.</p>
+<p>When Gautam returned and was told that Mahavira had attained nirvana — had left the world — his grief was overwhelming. He fell to the earth weeping. The disciples gathered around him. A wise monk gently asked: "Gautam, you who have taught us non-attachment — should the love for the one who taught you non-attachment still bind you? The Bhagavan you loved has gone beyond all grief. Are you not ready to follow?"</p>
+<h3>The Lamp of Liberation</h3>
+<p>In that moment of complete desolation, Gautam found his own deepest truth. The attachment dissolved — not with effort, but with understanding. The last thread of karma snapped. At that very instant — the same night as Mahavira's nirvana — Gautam Swami attained Keval Gyan (omniscience) and shortly thereafter, nirvana (complete liberation). Two lamps were lit that night: the lamp of the master's nirvana and the lamp of the disciple's enlightenment. The world celebrates this night as <strong>Diwali</strong> in the Jain tradition — not merely the end of darkness, but the beginning of the inner light.</p>
+<div class="story-moral"><strong>🌸 For the mother:</strong> The deepest love eventually asks us to release even what we love most — not because it is wrong to love, but because love, perfected, becomes liberation. That night became the brightest night of all.</div>
+<div class="wiki-source">📚 Source: <a href="https://en.wikipedia.org/wiki/Gautama_Svami" target="_blank">Wikipedia — Gautama Svami</a> · Uttaradhyayana Sutra; Kalpa Sutra</div>`
+  }
+];
+
+// ══════════════════════════════════════════════════
+// YT IFRAME API — with error fallback
+// ══════════════════════════════════════════════════
+let ytAPIReady = false;
+let pendingStory = null;
+let currentPlayer = null;
+
+window.onYouTubeIframeAPIReady = function() {
+  ytAPIReady = true;
+  if (pendingStory) { loadYTPlayer(pendingStory); pendingStory = null; }
+};
+
+function loadYTPlayer(story) {
+  if (!ytAPIReady) { pendingStory = story; return; }
+  if (currentPlayer) { try { currentPlayer.destroy(); } catch(e){} currentPlayer = null; }
+
+  document.getElementById('video-fallback').classList.remove('show');
+  document.getElementById('fallback-yt-link').href = 'https://www.youtube.com/watch?v=' + story.ytId;
+
+  currentPlayer = new YT.Player('yt-player', {
+    videoId: story.ytId,
+    playerVars: { rel:0, modestbranding:1, origin: location.origin || 'http://localhost' },
+    events: {
+      onError: function(e) {
+        // 150/151 = embedding not allowed, 5 = HTML5 error, 2 = invalid ID
+        document.getElementById('video-fallback').classList.add('show');
+      }
+    }
+  });
+}
+
+// ══════════════════════════════════════════════════
+// FILTER & RENDER
+// ══════════════════════════════════════════════════
+let activeFilter = 'all';
+
+function applyFilter(f) {
+  activeFilter = f;
+  ['all','h','j'].forEach(k => {
+    document.getElementById('fc-'+k).className =
+      'filter-chip fc-'+k+(k===(f==='all'?'all':f==='hindu'?'h':'j')?' on':'');
+  });
+  renderCards();
+}
+
+function renderCards() {
+  const list = activeFilter==='all' ? STORIES : STORIES.filter(s=>s.faith===activeFilter);
+  document.getElementById('cards-grid').innerHTML = list.map(s=>`
+    <article class="story-card" onclick="openStory('${s.id}')" tabindex="0"
+             onkeydown="if(event.key==='Enter')openStory('${s.id}')">
+      <div class="card-cover" style="background:${s.cover}">
+        <span>${s.emoji}</span>
+        <span class="card-faith-tag ${s.faith==='hindu'?'tag-hindu':'tag-jain'}">
+          ${s.faith==='hindu'?'🕉 Hindu':'☸ Jain'}
+        </span>
+      </div>
+      <div class="card-body">
+        <div class="card-deity">${s.deity}</div>
+        <div class="card-title">${s.title}</div>
+        <div class="card-sub">${s.subtitle}</div>
+        <div class="card-excerpt">${s.excerpt}</div>
+        <div class="card-footer">
+          <div class="card-meta-row">
+            <span class="card-dur">⏱ ${s.dur}</span>
+          </div>
+          <button class="card-play-btn ${s.faith==='hindu'?'play-h':'play-j'}">
+            ▶ Listen
+          </button>
+        </div>
+      </div>
+    </article>`).join('');
+}
+
+// ══════════════════════════════════════════════════
+// NAVIGATION
+// ══════════════════════════════════════════════════
+function showPage(p) {
+  document.querySelectorAll('.page').forEach(el=>el.classList.remove('active'));
+  document.getElementById('page-'+p).classList.add('active');
+  document.querySelectorAll('.nav-btn:not(.nav-btn-start)').forEach(b=>b.classList.remove('active'));
+  const nb = document.getElementById('nav-'+p);
+  if (nb) nb.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+// ══════════════════════════════════════════════════
+// OPEN STORY
+// ══════════════════════════════════════════════════
+function openStory(id) {
+  const s = STORIES.find(x=>x.id===id);
+  if(!s) return;
+
+  // Breadcrumb
+  document.getElementById('bc-cur').textContent = s.title;
+
+  // Banner
+  const banner = document.getElementById('article-banner');
+  banner.style.background = s.bg;
+  document.getElementById('article-icon').textContent = s.emoji;
+  document.getElementById('article-icon').style.background = s.cover;
+  document.getElementById('article-meta').innerHTML = `
+    <span class="article-category ${s.faith==='hindu'?'cat-hindu':'cat-jain'}">
+      ${s.faith==='hindu'?'🕉 Hindu':'☸ Jainism'} &nbsp;·&nbsp; ${s.deity}
+    </span>
+    <div class="article-title">${s.title}</div>
+    <div class="article-subtitle">${s.subtitle}</div>
+    <div class="article-desc">${s.excerpt}</div>
+    <div class="article-tags">${s.tags.map(t=>`<span class="article-tag">${t}</span>`).join('')}</div>
+    <div class="article-reading-time">📖 &nbsp;~8 min read &nbsp;·&nbsp; ⏱ ${s.dur} audio</div>`;
+
+  // Story text
+  document.getElementById('story-body').innerHTML = s.text;
+
+  // Related stories (same faith first, then others)
+  const sameFaith = STORIES.filter(x=>x.id!==id && x.faith===s.faith);
+  const otherFaith = STORIES.filter(x=>x.id!==id && x.faith!==s.faith);
+  const related = [...sameFaith, ...otherFaith].slice(0,6);
+  document.getElementById('related-list').innerHTML = related.map(r=>`
+    <div class="rel-item" onclick="openStory('${r.id}')">
+      <div class="rel-thumb" style="background:${r.cover}">${r.emoji}</div>
+      <div class="rel-info">
+        <div class="rel-deity">${r.deity}</div>
+        <div class="rel-title">${r.title}</div>
+        <div class="rel-dur">⏱ ${r.dur} · ${r.faith==='hindu'?'🕉':'☸'}</div>
+      </div>
+    </div>`).join('');
+
+  // Load YouTube
+  loadYTPlayer(s);
+  showPage('article');
+}
+
+// Init
+renderCards();
+</script>
+</body>
+</html>
