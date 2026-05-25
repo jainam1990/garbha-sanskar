@@ -1,17 +1,17 @@
-name = "garbha-sanskar"
-main = "worker.js"
-compatibility_date = "2024-01-01"
+name = "sanskar"
+compatibility_date = "2024-12-01"
 
-# Route — update this to match your Cloudflare zone if using a custom domain
-# workers_dev = true serves at <name>.jainamshah.workers.dev automatically
-
-[site]
-bucket = "."
-include = ["garbha-sanskar.html", "README.md"]
-
-# To deploy:
-#   1. wrangler login          (authenticates locally — token is NEVER stored here)
-#   2. wrangler deploy
+# Serves everything in ./public as static assets — same pattern as blog + tools sites.
+# No worker.js needed; Cloudflare handles routing automatically.
 #
-# Your Cloudflare Account ID is read from ~/.wrangler/config.toml after login.
-# Do NOT add account_id or api_token to this file.
+# Deploy:
+#   wrangler login        (auth stays local, never committed)
+#   wrangler deploy
+#
+# Live at: https://sanskar.jainamshah.workers.dev
+#
+# Do NOT add account_id or api_token here.
+
+[assets]
+directory = "./public"
+not_found_handling = "single-page-application"
